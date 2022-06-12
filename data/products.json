@@ -1,0 +1,76 @@
+{
+  "foods":[
+    {
+      "id": 1,
+      "category": "Meat/dinner",
+      "foodName": "Awesome Food",
+      "price": "R15",
+      "foodImg": "./img/menu1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+     {
+      "id": 2,
+      "category": "Donut/Lunches",
+      "foodName": "Awesome Food",
+      "price": "R120",
+      "foodImg": "./img/menu2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 3,
+      "category": "Cake/Dessert",
+      "foodName": "Awesome Food",
+      "price": "R20",
+      "foodImg": "./img/menu3.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 4,
+      "category": "Drink/Coffee",
+      "foodName": "Awesome Food",
+      "price": "R10",
+      "foodImg": "./img/menu4.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 5,
+      "category": "Pizza/Lunches",
+      "foodName": "Awesome Food",
+      "price": "R334",
+      "foodImg": "./img/menu5.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 6,
+      "category": "Meat/Dinner",
+      "foodName": "Awesome Food",
+      "price": "R24",
+      "foodImg": "./img/menu6.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 7,
+      "category": "Burger/Lunches",
+      "foodName": "Awesome Food",
+      "price": "R444",
+      "foodImg": "./img/menu7.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+        {
+      "id": 8,
+      "category": "Donut/Bread",
+      "foodName": "Awesome Food",
+      "price": "R27",
+      "foodImg": "./img/menu8.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    },
+            {
+      "id": 9,
+      "category": "Meat / dinner",
+      "foodName": "Awesome Food",
+      "price": "R55",
+      "foodImg": "./img/menu9.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, officiis?"
+    }
+  ]
+}

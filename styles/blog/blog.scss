@@ -1,0 +1,95 @@
+// utilities 
+@font-face {
+  font-family: --AlfaSlabOne-Regular;
+  src: url(../../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Bold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Inspiration-Regulard;
+  src: url(../../fonts/Inspiration-Regular.ttf);
+}
+
+$inspirationFF: --Inspiration-Regulard,
+"sans-serif";
+$hFF: --Poppins-Bold,
+"sans-serif";
+$pFF: --Poppins-Regular,
+"sans-serif";
+$alfaFF: --AlfaSlabOne-Regular,
+"sans-serif";
+$white: #ffffff;
+$pColor: #444;
+$black: #000000;
+$whiteIsh: #f2f2f2;
+$pFontSize: .8rem;
+$primaryColor: #ff9e0d;
+$hoverColor: #9a600a;
+$hFontSize: 2rem;
+$boxShadow: 0 .2rem 2rem rgba(0, 0, 0, 0.03);
+// end utilities 
+
+// blog style 
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)),
+    url(../../img/blog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blog{
+  .container{
+    .containerBox{
+      flex-wrap: wrap;
+
+      .box{
+        &:nth-child(3){
+          background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/blog3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        }
+         &:nth-child(4){
+          background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/blog4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        }
+        &:nth-child(5) {
+          background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/blog5.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &:nth-child(6) {
+          background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/blog6.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+    }
+    }
+  }
+}
+// end blog style 
+
+@media screen and (max-width: 600px) {
+  .banner .container .containerBox h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+    .banner .container .containerBox h2 {
+      font-size: 2rem;
+    }
+}

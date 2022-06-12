@@ -1,0 +1,207 @@
+@font-face {
+  font-family: --AlfaSlabOne-Regular;
+  src: url(../../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Bold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Inspiration-Regulard;
+  src: url(../../fonts/Inspiration-Regular.ttf);
+}
+
+$inspirationFF: --Inspiration-Regulard,
+"sans-serif";
+$hFF: --Poppins-Bold,
+"sans-serif";
+$pFF: --Poppins-Regular,
+"sans-serif";
+$alfaFF: --AlfaSlabOne-Regular,
+"sans-serif";
+$white: #ffffff;
+$pColor: #444;
+$black: #000000;
+$whiteIsh: #f2f2f2;
+$pFontSize: .8rem;
+$primaryColor: #ff9e0d;
+$hoverColor: #9a600a;
+$hFontSize: 2rem;
+$boxShadow: 0 .2rem 2rem rgba(0, 0, 0, 0.03);
+// end utilities
+
+// banner 
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+// end banner 
+
+// about style
+.about{
+  .container{
+    .title{
+      width: 600px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      p{
+        padding-top: 1rem;
+      }
+    }
+
+    .containerBox{
+      margin-top: 2rem;
+      flex-wrap: wrap;
+
+      .box{
+        flex: 1 1 20rem;
+        border-radius: .4rem;
+        padding: 2rem 2rem;
+        box-shadow: $boxShadow;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        background: $whiteIsh;
+
+        img{
+          padding: .5rem;
+          border-radius: 50%;
+          background: $primaryColor;
+          box-shadow: $boxShadow;
+        }
+        h3{
+          font-size: 1.3rem;
+          font-family: $pFF;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+// end about 
+
+// story
+.story{
+  background: $primaryColor;
+
+  .container{
+    .containerBox{
+      .box{
+        flex: 1 1 35rem;
+        align-self: normal;
+
+        .content{
+          width: 100%;
+          height: 100%;
+          gap: 1rem;
+
+          .imgBox{
+            flex: 1 1 20rem;
+            align-self: normal;
+            background: $whiteIsh;
+            border-radius: .4rem;
+            
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .textBox{
+          height: 100%;
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 1rem;
+
+          h3{
+            font-size: 1.3rem;
+            font-family: $pFF;
+            font-weight: 600;
+            color: $white;
+          }
+          h2{
+            font-size: 5rem;
+            font-family: $inspirationFF;
+            color: $white;
+
+            span{
+              color: $pColor;
+            }
+          }
+          p{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+// end story
+
+// food slides 
+.slideItems{
+  // .container{
+  //   .containerBox{
+  //     // display: grid;
+  //     // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  //     // gap: 1.5rem;
+  //   }
+  // }
+
+  .buttons{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// end food slides 
+
+// small devices 
+@media screen and (max-width: 992px) {
+  .story {
+    .container {
+      .containerBox {
+        flex-wrap: wrap;
+      }
+      }
+      }
+}
+@media screen and (max-width: 600px) {
+  .banner .container .containerBox h2 {
+    font-size: 3rem;
+  }
+  .story .container .containerBox .box .textBox h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .banner .container .containerBox h2 {
+      font-size: 2rem;
+    }
+    .story .container .containerBox .box .textBox{
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      h2{
+      font-size: 2rem;
+      }
+    }
+}

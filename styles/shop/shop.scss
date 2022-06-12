@@ -1,0 +1,118 @@
+@font-face {
+  font-family: --AlfaSlabOne-Regular;
+  src: url(../../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Bold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Inspiration-Regulard;
+  src: url(../../fonts/Inspiration-Regular.ttf);
+}
+
+$inspirationFF: --Inspiration-Regulard,
+"sans-serif";
+$hFF: --Poppins-Bold,
+"sans-serif";
+$pFF: --Poppins-Regular,
+"sans-serif";
+$alfaFF: --AlfaSlabOne-Regular,
+"sans-serif";
+$white: #ffffff;
+$pColor: #444;
+$black: #000000;
+$whiteIsh: #f2f2f2;
+$pFontSize: .8rem;
+$primaryColor: #ff9e0d;
+$hoverColor: #9a600a;
+$hFontSize: 2rem;
+$boxShadow: 0 .2rem 2rem rgba(0, 0, 0, 0.03);
+
+@keyframes zoomIn {
+  0%{
+    transform: scale(0);
+  }
+   100%{
+    transform: scale(1);
+  }
+}
+// end utilities
+
+
+// banner styles
+.banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../../img/shop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+// end banner here
+
+// products section style 
+.product{
+  .container{
+    .containerBox{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .controls{
+      width: 100%;
+      justify-content: center;
+
+      .controlBtn{
+        gap: .5rem;
+
+        span{
+          width: 1rem;
+          height: 1rem;
+          background-color: $primaryColor;
+          color: $white;
+          font-size: $pFontSize;
+          font-family: $pFF;
+          font-weight: 600;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          align-self: normal;
+          padding: 1.1rem 1.1rem;
+          border-radius: .4rem;
+          box-shadow: $boxShadow;
+          transition: .5s ease-in;
+        }
+      }
+    }
+  }
+}
+// end products
+
+// small devices
+@media screen and (max-width: 992px){
+}
+
+@media screen and (max-width: 600px) {
+  .banner .container .containerBox h2 {
+    font-size: 3rem;
+  }
+  .product .container .containerBox {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .banner .container .containerBox h2 {
+    font-size: 2rem;
+  }
+}

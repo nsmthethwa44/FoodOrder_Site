@@ -1,0 +1,174 @@
+// utilities 
+@font-face {
+  font-family: --AlfaSlabOne-Regular;
+  src: url(../../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Bold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: --Poppins-Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: --Inspiration-Regulard;
+  src: url(../../fonts/Inspiration-Regular.ttf);
+}
+
+$inspirationFF: --Inspiration-Regulard,
+"sans-serif";
+$hFF: --Poppins-Bold,
+"sans-serif";
+$pFF: --Poppins-Regular,
+"sans-serif";
+$alfaFF: --AlfaSlabOne-Regular,
+"sans-serif";
+$white: #ffffff;
+$pColor: #444;
+$black: #000000;
+$whiteIsh: #f2f2f2;
+$pFontSize: .8rem;
+$primaryColor: #ff9e0d;
+$hoverColor: #9a600a;
+$hFontSize: 2rem;
+$boxShadow: 0 .2rem 2rem rgba(0, 0, 0, 0.03);
+// end utilities 
+
+// contact banner
+.banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)),
+  url(../../img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+// end banner
+.contact{
+  .container{
+    .containerBox{
+      .box{
+        flex: 1 1 35rem;
+
+        .content{
+          width: 100%;
+          height: 100%;
+
+          .textBox{
+            width: 100%;
+            height: 100%;
+            align-items: flex-start;
+            flex-direction: column;
+
+            h2{
+              font-size: 1.3rem;
+              font-family: $inspirationFF;
+              font-weight: 600;
+              color: $primaryColor;
+            }
+
+            .text{
+              font-size: 1.3rem;
+              font-family: $pFF;
+              font-weight: 600;
+              color: $pColor;
+              // line-height: .3;
+            }
+            .info{
+              align-items: flex-start;
+              flex-direction: column;
+              gap: 1rem;
+
+              h3{
+                font-size: 1rem;
+                font-family: $pFF;
+                font-weight: 900;
+              }
+              li{
+                gap: .5rem;
+                font-family: $pFF;
+                font-size: $pFontSize;
+              }
+            }
+          }
+          .imgBox{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: .4rem;
+
+            .mapImg{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .contactForm{
+      width: 100%;
+      margin-top: 2rem;
+
+      .form{
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+
+        .inputBox{
+          width: 100%;
+        }
+        .textInput{
+          width: 100%;
+          padding: .6rem 1rem;
+          outline: none;
+          border: 2px solid $whiteIsh;
+          border-radius: .4rem;
+          font-size: $pFontSize;
+          font-family: $pFF;
+          color: $pColor;
+          transition: .5s ease-in;
+
+          &:hover, &:focus{
+          border-color: $hoverColor;
+          }
+        }
+        .message{
+          resize: none;
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+
+// end contact info 
+
+
+// small devices 
+
+@media screen and (max-width: 992px) {
+  .contact {
+    .container {
+      .containerBox {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner .container .containerBox h2 {
+    font-size: 3rem;
+  }
+  .contact .container .contactForm .form .inputBox {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {}
